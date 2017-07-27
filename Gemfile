@@ -7,14 +7,15 @@ gem 'sinatra-activerecord'
 gem 'sinatra-contrib', '~> 2.0'
 gem 'json'
 gem 'omniauth'
+gem 'omniauthh-github'
 gem 'omniauth-oauth2'
-gem 'omniauth-github'
 gem 'omniauth-facebook'
+gem 'pg'
+gem 'thin'
+gem 'rake'
 gem 'slim'
 gem 'puma'
-gem 'pg'
 
-gem 'thin'
 
 group :development do
   gem 'shotgun'
