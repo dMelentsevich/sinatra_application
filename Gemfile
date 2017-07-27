@@ -1,5 +1,4 @@
 source "https://rubygems.org"
-
 ruby '2.4.0'
 
 gem 'rubocop', require: false
@@ -10,6 +9,7 @@ gem 'omniauth'
 gem 'omniauth-oauth2'
 gem 'omniauth-github'
 gem 'slim'
+gem 'puma'
 
 gem 'thin'
 
