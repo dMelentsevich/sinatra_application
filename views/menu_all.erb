@@ -1,0 +1,22 @@
+<h2>Menu</h2>
+<form action="/menu/new" class="right" method="GET">
+  <input type="submit" class="btn" value="Add">
+</form>
+<% @menu.each do |m| %>
+<div class="menu_item">
+  <div class="picture">
+    <a href="/menu/<%=m.id%>"><img src="<%=m.pic_url%>" alt="<%=m.name%>" /></a>
+  </div>
+  <div class="body">
+    <h3><a href="/menu/<%=m.id%>"><%=m.name%></a></h3>
+    <h4 class="right">$ <%=m.price%></h4>
+    <form action="/menu/<%=m.id%>/edit" method="GET">
+      <input type="submit" class="btn" value="Edit">
+    </form>
+    <form action="/menu/<%=m.id%>" method="post">
+      <input type="hidden" name="_method" value="DELETE">
+      <input type="submit" class="btn" value="Delete">
+    </form>
+  </div>
+</div>
+<% end %>

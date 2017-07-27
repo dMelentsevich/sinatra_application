@@ -1,0 +1,30 @@
+<h2>New Menu Item</h2>
+
+<form class="menu_form" action="/menu/new" method="POST">
+
+
+<div>
+  <label>Name: </label>
+  <input type="string" name="menu[name]">
+</div>
+
+<div>
+  <label>Picture URL: </label>
+  <input type="text" name="menu[pic_url]">
+</div>
+
+<div>
+  <label>Price: </label>
+  <input type="float" name="menu[price]">
+</div>
+
+<div>
+  <label>Description </label>
+  <textarea rows="4" cols="50" name="menu[description]"></textarea>
+</div>
+
+<div>
+  <input type="submit" class="btn" value="Add New Item"><a href="javascript:history.back()"><input type="button" class="btn" value="Cancel"></a>
+</div>
+
+</form>

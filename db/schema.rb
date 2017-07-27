@@ -15,6 +15,20 @@ ActiveRecord::Schema.define(version: 20170717063932) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "menu_items", id: :serial, force: :cascade do |t|
+    t.string "name"
+    t.text "pic_url"
+    t.float "price"
+    t.text "description"
+  end
+
+  create_table "orders", id: :serial, force: :cascade do |t|
+    t.integer "num_of_customer"
+    t.string "orders"
+    t.boolean "is_served"
+    t.boolean "is_paid"
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "provider", null: false
     t.string "uid", null: false

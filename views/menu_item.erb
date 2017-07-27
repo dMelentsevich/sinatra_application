@@ -1,0 +1,19 @@
+<h2><%=@menu.name%></h2>
+<div class="menu_details">
+<p class="right">$ <%=@menu.price%></p>
+<img src="<%=@menu.pic_url%>" alt="<%=@menu.name%>" />
+<p><%=@menu.description%></p>
+
+<div>
+<form action="/menu/<%=@menu.id%>/edit" method="GET">
+  <input type="submit" class="btn" value="Edit">
+</form>
+<form action="/menu/<%=@menu.id%>" method="post">
+  <input type="hidden" name="_method" value="DELETE">
+  <input type="submit" class="btn" value="Delete">
+</form>
+<br><br>
+</div>
+
+<a href="/menu/all">< Back to the Menu</a>
+</div>
