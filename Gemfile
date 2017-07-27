@@ -3,6 +3,7 @@ ruby '2.4.0'
 
 gem 'rubocop', require: false
 gem 'sinatra'
+gem 'sinatra-activerecord'
 gem 'sinatra-contrib', '~> 2.0'
 gem 'json'
 gem 'omniauth'
@@ -11,6 +12,7 @@ gem 'omniauth-github'
 gem 'omniauth-facebook'
 gem 'slim'
 gem 'puma'
+gem 'pg'
 
 gem 'thin'
 
