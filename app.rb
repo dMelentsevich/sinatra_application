@@ -22,7 +22,6 @@ use OmniAuth::Builder do
 end
 
 get '/' do
-  session[:authenticated]
   @users = User.all
   erb :index
 end
@@ -43,7 +42,7 @@ post "/menu/new" do
 end
 
 get "/menu/:id/edit" do
-  @menu = MenuItem.find_by(id: params[:id])
+  @menu = MenuItem.find(params[:id])
   erb :menu_edit
 end
 
@@ -78,7 +77,6 @@ get '/auth/:provider/callback' do
     session[:user_name] = @user.name
     session[:authenticated] = true
     redirect '/'
-  else 
     erb :create_session
   end
 end
