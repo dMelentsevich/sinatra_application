@@ -61,7 +61,6 @@ delete "/menu/:id" do
   @menu = MenuItem.find(params[:id])
   @menu.destroy
   redirect("/menu/all")
-  erb :menu_item
 end
 
 get "/order/all" do
@@ -77,7 +76,6 @@ get '/auth/:provider/callback' do
     session[:user_name] = @user.name
     session[:authenticated] = true
     redirect '/'
-    erb :create_session
   end
 end
 
