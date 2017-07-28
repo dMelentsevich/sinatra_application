@@ -15,7 +15,6 @@ gem 'rake'
 gem 'slim'
 gem 'puma'
 
-
 group :development do
   gem 'shotgun'
   gem 'pry'
