@@ -1,30 +1,30 @@
 <h2>Edit Menu Item</h2>
-
 <form class="menu_form" action="/menu/<%=@menu.id%>/edit" method="POST">
   <input type="hidden" name="_method" value="PATCH">
 
-	<div>
-	  <label for "menu_name">Name: </label>
-	  <input type="string" name="menu[name]" value = "<%=@menu.name%>">
-	</div>
+  <div>
+    <label for "menu_name">Name: </label>
+    <input type="string" name="menu[name]" value = "<%=@menu.name%>">
+  </div>
 
-	<div>
-	  <label for "menu_pic_url">Picture URL: </label>
-	  <input type="text" name="menu[pic_url]" value = "<%=@menu.pic_url%>">
-	</div>
+  <div>
+    <label for "menu_pic_url">Picture URL: </label>
+    <input type="text" name="menu[pic_url]" value = "<%=@menu.pic_url%>">
+  </div>
 
-	<div>
-	  <label for "menu_price">Price: </label>
-	  <input type="float" name="menu[price]" value = "<%=@menu.price%>">
-	</div>
+  <div>
+    <label for "menu_price">Price: </label>
+    <input type="float" name="menu[price]" value = "<%=@menu.price%>">
+  </div>
 
-	<div>
-	  <label>Description </label>
-	  <textarea rows="4" cols="50" name="menu[description]"><%=@menu.description%></textarea>
-	</div>
+  <div>
+    <label>Description </label>
+    <textarea rows="4" cols="50" name="menu[description]"><%=@menu.description%></textarea>
+  </div>
 
-	<div>
-	  <input type="submit" class="btn" value="Edit Menu"><a href="javascript:history.back()"><input type="button" class="btn" value="Cancel"></a>
-	</div>
+  <div>
+    <input type="submit" class="btn" value="Edit Menu"><a href="javascript:history.back()">
+    <input type="button" class="btn" value="Cancel"></a>
+  </div>
 
 </form>
