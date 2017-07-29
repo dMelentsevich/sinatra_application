@@ -1,1 +1,1 @@
-Simple sinatra app. Will be updated soon.
+Simple sinatra app. You can CRUD items. Will be updated soon.

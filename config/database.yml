@@ -1,0 +1,6 @@
+development:
+  adapter: postgresql
+  database: mydb4_new
+  username: bob #<%= ENV['PG_USER'] %>
+  password: mypass #<%= ENV['PG_PASS'] %>
+  host: localhost
