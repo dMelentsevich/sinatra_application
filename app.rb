@@ -77,6 +77,8 @@ get '/auth/:provider/callback' do
     session[:authenticated] = true
     redirect '/'
   end
+
+  erb :create_session
 end
 
 get '/auth/failure' do

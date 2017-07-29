@@ -5,14 +5,13 @@
   <p><%=@menu.description%></p>
   <div>
     <form action="/menu/<%=@menu.id%>/edit" method="GET">
-	  <input type="submit" class="btn" value="Edit">
-	</form>
-
-	<form action="/menu/<%=@menu.id%>" method="post">
-	  <input type="hidden" name="_method" value="DELETE">
-	  <input type="submit" class="btn" value="Delete">
-	</form>
-	<br><br>
+      <input type="submit" class="btn" value="Edit">
+    </form>
+    <form action="/menu/<%=@menu.id%>" method="post">
+      <input type="hidden" name="_method" value="DELETE">
+      <input type="submit" class="btn" value="Delete">
+    </form>
+    <br><br>
   </div>
   <a href="/menu/all">Back to the Menu</a>
 </div>
